@@ -11,13 +11,13 @@ struct ContentView: View {
     
     @State private var selectedView = "MainView"
     @StateObject var settingViewModel = SettingViewModel()
-    @StateObject var mainViewModel = MainViewModel()
+    @StateObject var timerViewModel = TimerViewModel()
     @StateObject var secondViewModel = SecondViewModel()
     
     var body: some View {
         TabBarView(
             selectedView: $selectedView,
-            mainViewModel: mainViewModel,
+            timerViewModel: timerViewModel,
             seocndViewModel: secondViewModel,
             settingViewModel: settingViewModel
         )

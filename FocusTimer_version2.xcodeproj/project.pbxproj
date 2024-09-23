@@ -13,9 +13,9 @@
 		71705C7D2CA05C1C00B4F852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */; };
 		71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C862CA05E0500B4F852 /* TabBarView.swift */; };
 		71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C882CA05E6E00B4F852 /* SettingView.swift */; };
-		71705C8B2CA05E8000B4F852 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C8A2CA05E7F00B4F852 /* MainView.swift */; };
+		71705C8B2CA05E8000B4F852 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C8A2CA05E7F00B4F852 /* TimerView.swift */; };
 		71705C8D2CA05EA400B4F852 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C8C2CA05EA400B4F852 /* SecondView.swift */; };
-		71705C912CA060C600B4F852 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C902CA060C600B4F852 /* MainViewModel.swift */; };
+		71705C912CA060C600B4F852 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C902CA060C600B4F852 /* TimerViewModel.swift */; };
 		71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C922CA0627C00B4F852 /* SettingViewModel.swift */; };
 		71705C952CA0640400B4F852 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C942CA0640400B4F852 /* SecondViewModel.swift */; };
 		71705C992CA0787F00B4F852 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71705C982CA0787F00B4F852 /* Launch Screen.storyboard */; };
@@ -25,16 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71705C722CA05C1B00B4F852 /* iOS-base-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-base-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71705C722CA05C1B00B4F852 /* FocusTimer_version2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer_version2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_base_appApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71705C792CA05C1C00B4F852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71705C862CA05E0500B4F852 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		71705C882CA05E6E00B4F852 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		71705C8A2CA05E7F00B4F852 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		71705C8A2CA05E7F00B4F852 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		71705C8C2CA05EA400B4F852 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		71705C902CA060C600B4F852 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		71705C902CA060C600B4F852 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		71705C922CA0627C00B4F852 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		71705C942CA0640400B4F852 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		71705C982CA0787F00B4F852 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		71705C692CA05C1B00B4F852 = {
 			isa = PBXGroup;
 			children = (
-				71705C742CA05C1B00B4F852 /* iOS-base-app */,
+				71705C742CA05C1B00B4F852 /* FocusTimer_version2 */,
 				71705C732CA05C1B00B4F852 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +65,12 @@
 		71705C732CA05C1B00B4F852 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71705C722CA05C1B00B4F852 /* iOS-base-app.app */,
+				71705C722CA05C1B00B4F852 /* FocusTimer_version2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71705C742CA05C1B00B4F852 /* iOS-base-app */ = {
+		71705C742CA05C1B00B4F852 /* FocusTimer_version2 */ = {
 			isa = PBXGroup;
 			children = (
 				71705C972CA0784900B4F852 /* Extension */,
@@ -82,7 +82,7 @@
 				71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */,
 				71705C7B2CA05C1C00B4F852 /* Preview Content */,
 			);
-			path = "iOS-base-app";
+			path = FocusTimer_version2;
 			sourceTree = "<group>";
 		};
 		71705C7B2CA05C1C00B4F852 /* Preview Content */ = {
@@ -108,7 +108,7 @@
 				71705C982CA0787F00B4F852 /* Launch Screen.storyboard */,
 				71705C772CA05C1B00B4F852 /* ContentView.swift */,
 				71705C862CA05E0500B4F852 /* TabBarView.swift */,
-				71705C8A2CA05E7F00B4F852 /* MainView.swift */,
+				71705C8A2CA05E7F00B4F852 /* TimerView.swift */,
 				71705C8C2CA05EA400B4F852 /* SecondView.swift */,
 			);
 			path = View;
@@ -117,7 +117,7 @@
 		71705C852CA05D6C00B4F852 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				71705C902CA060C600B4F852 /* MainViewModel.swift */,
+				71705C902CA060C600B4F852 /* TimerViewModel.swift */,
 				71705C922CA0627C00B4F852 /* SettingViewModel.swift */,
 				71705C942CA0640400B4F852 /* SecondViewModel.swift */,
 			);
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71705C712CA05C1B00B4F852 /* iOS-base-app */ = {
+		71705C712CA05C1B00B4F852 /* FocusTimer_version2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "iOS-base-app" */;
+			buildConfigurationList = 71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "FocusTimer_version2" */;
 			buildPhases = (
 				71705C6E2CA05C1B00B4F852 /* Sources */,
 				71705C6F2CA05C1B00B4F852 /* Frameworks */,
@@ -162,12 +162,12 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-base-app";
+			name = FocusTimer_version2;
 			packageProductDependencies = (
 				71705CA32CA1906A00B4F852 /* iOS-Module */,
 			);
 			productName = "iOS-base-app";
-			productReference = 71705C722CA05C1B00B4F852 /* iOS-base-app.app */;
+			productReference = 71705C722CA05C1B00B4F852 /* FocusTimer_version2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "iOS-base-app" */;
+			buildConfigurationList = 71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "FocusTimer_version2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71705C712CA05C1B00B4F852 /* iOS-base-app */,
+				71705C712CA05C1B00B4F852 /* FocusTimer_version2 */,
 			);
 		};
 /* End PBXProject section */
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71705C912CA060C600B4F852 /* MainViewModel.swift in Sources */,
+				71705C912CA060C600B4F852 /* TimerViewModel.swift in Sources */,
 				71705CA02CA165A600B4F852 /* Sample.swift in Sources */,
 				71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */,
 				71705C952CA0640400B4F852 /* SecondViewModel.swift in Sources */,
@@ -233,7 +233,7 @@
 				71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */,
 				71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */,
 				71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */,
-				71705C8B2CA05E8000B4F852 /* MainView.swift in Sources */,
+				71705C8B2CA05E8000B4F852 /* TimerView.swift in Sources */,
 				71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,10 +367,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS-base-app/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer_version2/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -382,7 +383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.korea.lvnvn.iOS-base-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.korea.lvnvn.FocusTimer_version2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -397,10 +398,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS-base-app/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer_version2/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.korea.lvnvn.iOS-base-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.korea.lvnvn.FocusTimer_version2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -423,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "iOS-base-app" */ = {
+		71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "FocusTimer_version2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71705C7E2CA05C1C00B4F852 /* Debug */,
@@ -432,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "iOS-base-app" */ = {
+		71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "FocusTimer_version2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71705C812CA05C1C00B4F852 /* Debug */,

@@ -11,13 +11,13 @@ struct TabBarView: View {
     
     @Binding var selectedView: String
    
-    @ObservedObject var mainViewModel: MainViewModel
+    @ObservedObject var timerViewModel: TimerViewModel
     @ObservedObject var seocndViewModel: SecondViewModel
     @ObservedObject var settingViewModel: SettingViewModel
     
     var body: some View {
         TabView(selection: $selectedView) {
-            MainView(viewModel: MainViewModel())
+            TimerView(viewModel: TimerViewModel())
                 .tabItem {
                     Image(systemName: "paperplane")
                 }
@@ -43,7 +43,7 @@ struct TabBarView: View {
 #Preview {
     TabBarView(
         selectedView: .constant("MainView"),
-        mainViewModel: MainViewModel(),
+        timerViewModel: TimerViewModel(),
         seocndViewModel: SecondViewModel(),
         settingViewModel: SettingViewModel()
     )
