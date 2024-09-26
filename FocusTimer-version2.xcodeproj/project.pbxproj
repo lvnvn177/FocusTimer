@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */; };
+		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
+		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
+		71705C7D2CA05C1C00B4F852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */; };
+		71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C862CA05E0500B4F852 /* TabBarView.swift */; };
+		71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C882CA05E6E00B4F852 /* SettingView.swift */; };
+		71705C8B2CA05E8000B4F852 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C8A2CA05E7F00B4F852 /* TimerView.swift */; };
+		71705C8D2CA05EA400B4F852 /* FocusCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C8C2CA05EA400B4F852 /* FocusCalendarView.swift */; };
+		71705C912CA060C600B4F852 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C902CA060C600B4F852 /* TimerViewModel.swift */; };
+		71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C922CA0627C00B4F852 /* SettingViewModel.swift */; };
+		71705C952CA0640400B4F852 /* FocusCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C942CA0640400B4F852 /* FocusCalendarViewModel.swift */; };
+		71705C992CA0787F00B4F852 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71705C982CA0787F00B4F852 /* Launch Screen.storyboard */; };
+		71705CA42CA1906A00B4F852 /* iOS-Module in Frameworks */ = {isa = PBXBuildFile; productRef = 71705CA32CA1906A00B4F852 /* iOS-Module */; };
+		71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CA62CA1C90200B4F852 /* ControlView.swift */; };
+		71705CA92CA2E31A00B4F852 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CA82CA2E31A00B4F852 /* Record.swift */; };
+		71705CB12CA2EA0900B4F852 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB02CA2EA0900B4F852 /* Timer+Extension.swift */; };
+		71705CB32CA2F6F800B4F852 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB22CA2F6F800B4F852 /* TodoView.swift */; };
+		71705CB52CA2F72F00B4F852 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB42CA2F72F00B4F852 /* TodoViewModel.swift */; };
+		71705CB72CA2F98000B4F852 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB62CA2F98000B4F852 /* TodoItem.swift */; };
+		71705CB92CA2FFCF00B4F852 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB82CA2FFCF00B4F852 /* CompleteView.swift */; };
+		71705CBF2CA31DDB00B4F852 /* alarm_campfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */; };
+		71705CC12CA31DEC00B4F852 /* alarm_grinder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */; };
+		71705CC32CA31DF400B4F852 /* alarm_water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC22CA31DF400B4F852 /* alarm_water.mp3 */; };
+		71705CC52CA31DFA00B4F852 /* alarm_pages.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC42CA31DFA00B4F852 /* alarm_pages.mp3 */; };
+		71705CC82CA33A4F00B4F852 /* FocusCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CC72CA33A4F00B4F852 /* FocusCalendar+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71705C722CA05C1B00B4F852 /* FocusTimer-version2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FocusTimer-version2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_base_appApp.swift; sourceTree = "<group>"; };
+		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71705C792CA05C1C00B4F852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71705C862CA05E0500B4F852 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		71705C882CA05E6E00B4F852 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		71705C8A2CA05E7F00B4F852 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		71705C8C2CA05EA400B4F852 /* FocusCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCalendarView.swift; sourceTree = "<group>"; };
+		71705C902CA060C600B4F852 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		71705C922CA0627C00B4F852 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		71705C942CA0640400B4F852 /* FocusCalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCalendarViewModel.swift; sourceTree = "<group>"; };
+		71705C982CA0787F00B4F852 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		71705CA62CA1C90200B4F852 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		71705CA82CA2E31A00B4F852 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		71705CB02CA2EA0900B4F852 /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
+		71705CB22CA2F6F800B4F852 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		71705CB42CA2F72F00B4F852 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		71705CB62CA2F98000B4F852 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		71705CB82CA2FFCF00B4F852 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
+		71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_campfire.mp3; sourceTree = "<group>"; };
+		71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_grinder.mp3; sourceTree = "<group>"; };
+		71705CC22CA31DF400B4F852 /* alarm_water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_water.mp3; sourceTree = "<group>"; };
+		71705CC42CA31DFA00B4F852 /* alarm_pages.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_pages.mp3; sourceTree = "<group>"; };
+		71705CC72CA33A4F00B4F852 /* FocusCalendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FocusCalendar+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71705C6F2CA05C1B00B4F852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71705CA42CA1906A00B4F852 /* iOS-Module in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71705C692CA05C1B00B4F852 = {
+			isa = PBXGroup;
+			children = (
+				71705C742CA05C1B00B4F852 /* FocusTimer-version2 */,
+				71705C732CA05C1B00B4F852 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71705C732CA05C1B00B4F852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71705C722CA05C1B00B4F852 /* FocusTimer-version2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71705C742CA05C1B00B4F852 /* FocusTimer-version2 */ = {
+			isa = PBXGroup;
+			children = (
+				71705CAC2CA2E42400B4F852 /* Extension */,
+				71705CAD2CA2E42A00B4F852 /* Resources */,
+				71705C832CA05D4F00B4F852 /* Model */,
+				71705C842CA05D6200B4F852 /* View */,
+				71705C852CA05D6C00B4F852 /* ViewModel */,
+				71705C792CA05C1C00B4F852 /* Assets.xcassets */,
+				71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */,
+				71705C7B2CA05C1C00B4F852 /* Preview Content */,
+			);
+			path = "FocusTimer-version2";
+			sourceTree = "<group>";
+		};
+		71705C7B2CA05C1C00B4F852 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71705C832CA05D4F00B4F852 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71705CA82CA2E31A00B4F852 /* Record.swift */,
+				71705CB62CA2F98000B4F852 /* TodoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71705C842CA05D6200B4F852 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71705CBC2CA317A400B4F852 /* Public */,
+				71705CBA2CA3176000B4F852 /* Tab */,
+				71705C982CA0787F00B4F852 /* Launch Screen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71705C852CA05D6C00B4F852 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71705C902CA060C600B4F852 /* TimerViewModel.swift */,
+				71705C922CA0627C00B4F852 /* SettingViewModel.swift */,
+				71705C942CA0640400B4F852 /* FocusCalendarViewModel.swift */,
+				71705CB42CA2F72F00B4F852 /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71705CA52CA1C8D200B4F852 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				71705C882CA05E6E00B4F852 /* SettingView.swift */,
+				71705CA62CA1C90200B4F852 /* ControlView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		71705CAC2CA2E42400B4F852 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71705CB02CA2EA0900B4F852 /* Timer+Extension.swift */,
+				71705CC72CA33A4F00B4F852 /* FocusCalendar+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		71705CAD2CA2E42A00B4F852 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71705CC62CA31E0A00B4F852 /* Background */,
+				71705CBD2CA31D7B00B4F852 /* Alarm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71705CBA2CA3176000B4F852 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				71705CBB2CA3178300B4F852 /* Timer */,
+				71705C8C2CA05EA400B4F852 /* FocusCalendarView.swift */,
+				71705CA52CA1C8D200B4F852 /* Setting */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		71705CBB2CA3178300B4F852 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				71705C8A2CA05E7F00B4F852 /* TimerView.swift */,
+				71705CB22CA2F6F800B4F852 /* TodoView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		71705CBC2CA317A400B4F852 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				71705CB82CA2FFCF00B4F852 /* CompleteView.swift */,
+				71705C862CA05E0500B4F852 /* TabBarView.swift */,
+				71705C772CA05C1B00B4F852 /* ContentView.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		71705CBD2CA31D7B00B4F852 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				71705CC22CA31DF400B4F852 /* alarm_water.mp3 */,
+				71705CC42CA31DFA00B4F852 /* alarm_pages.mp3 */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		71705CC62CA31E0A00B4F852 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */,
+				71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71705C712CA05C1B00B4F852 /* FocusTimer-version2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "FocusTimer-version2" */;
+			buildPhases = (
+				71705C6E2CA05C1B00B4F852 /* Sources */,
+				71705C6F2CA05C1B00B4F852 /* Frameworks */,
+				71705C702CA05C1B00B4F852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FocusTimer-version2";
+			packageProductDependencies = (
+				71705CA32CA1906A00B4F852 /* iOS-Module */,
+			);
+			productName = "iOS-base-app";
+			productReference = 71705C722CA05C1B00B4F852 /* FocusTimer-version2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71705C6A2CA05C1B00B4F852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					71705C712CA05C1B00B4F852 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "FocusTimer-version2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71705C692CA05C1B00B4F852;
+			packageReferences = (
+				71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */,
+			);
+			productRefGroup = 71705C732CA05C1B00B4F852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71705C712CA05C1B00B4F852 /* FocusTimer-version2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71705C702CA05C1B00B4F852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71705C992CA0787F00B4F852 /* Launch Screen.storyboard in Resources */,
+				71705C7D2CA05C1C00B4F852 /* Preview Assets.xcassets in Resources */,
+				71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */,
+				71705CC12CA31DEC00B4F852 /* alarm_grinder.mp3 in Resources */,
+				71705CC32CA31DF400B4F852 /* alarm_water.mp3 in Resources */,
+				71705CBF2CA31DDB00B4F852 /* alarm_campfire.mp3 in Resources */,
+				71705CC52CA31DFA00B4F852 /* alarm_pages.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71705C6E2CA05C1B00B4F852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71705C912CA060C600B4F852 /* TimerViewModel.swift in Sources */,
+				71705CB92CA2FFCF00B4F852 /* CompleteView.swift in Sources */,
+				71705CB32CA2F6F800B4F852 /* TodoView.swift in Sources */,
+				71705CB52CA2F72F00B4F852 /* TodoViewModel.swift in Sources */,
+				71705CA92CA2E31A00B4F852 /* Record.swift in Sources */,
+				71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */,
+				71705C952CA0640400B4F852 /* FocusCalendarViewModel.swift in Sources */,
+				71705C8D2CA05EA400B4F852 /* FocusCalendarView.swift in Sources */,
+				71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */,
+				71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */,
+				71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */,
+				71705CB12CA2EA0900B4F852 /* Timer+Extension.swift in Sources */,
+				71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */,
+				71705C8B2CA05E8000B4F852 /* TimerView.swift in Sources */,
+				71705CB72CA2F98000B4F852 /* TodoItem.swift in Sources */,
+				71705CC82CA33A4F00B4F852 /* FocusCalendar+Extension.swift in Sources */,
+				71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		71705C7E2CA05C1C00B4F852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71705C7F2CA05C1C00B4F852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71705C812CA05C1C00B4F852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer-version2/Preview Content\"";
+				DEVELOPMENT_TEAM = J482Q29P6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.korea.lvnvn.FocusTimer-version2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71705C822CA05C1C00B4F852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer-version2/Preview Content\"";
+				DEVELOPMENT_TEAM = J482Q29P6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.korea.lvnvn.FocusTimer-version2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71705C6D2CA05C1B00B4F852 /* Build configuration list for PBXProject "FocusTimer-version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71705C7E2CA05C1C00B4F852 /* Debug */,
+				71705C7F2CA05C1C00B4F852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71705C802CA05C1C00B4F852 /* Build configuration list for PBXNativeTarget "FocusTimer-version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71705C812CA05C1C00B4F852 /* Debug */,
+				71705C822CA05C1C00B4F852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lvnvn177/iOS-Module.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71705CA32CA1906A00B4F852 /* iOS-Module */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = "iOS-Module";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 71705C6A2CA05C1B00B4F852 /* Project object */;
+}

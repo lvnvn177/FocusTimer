@@ -1,0 +1,15 @@
+{
+  "originHash" : "030ddc65bca272c92673697affa839b7349f3b1c3ffc65fb1fcaf44880320e5d",
+  "pins" : [
+    {
+      "identity" : "ios-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lvnvn177/iOS-Module.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a1a536110fa6243253392c4403f9f4fe2bf22791"
+      }
+    }
+  ],
+  "version" : 3
+}
