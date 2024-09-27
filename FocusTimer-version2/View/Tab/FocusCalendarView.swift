@@ -73,7 +73,7 @@ struct FocusCalendarView: View {
                         .frame(width: 40, height: 40)
                         .cornerRadius(4)
                         .overlay(
-                            Text(focusTime > 0 ? "\(focusTime)" : "")
+                            Text(focusTime > 0 ? "\(RecordFormat(record: focusTime))" : "")
                                 .font(.caption2)
                                 .foregroundColor(.white)
                         )
@@ -82,6 +82,9 @@ struct FocusCalendarView: View {
             .padding()
         }
         .background(Color.white)
+        .onAppear {
+            viewModel.loadRecords()
+        }
     }
     func generateDatesForMonth() -> [String] {
         let calendar = Calendar.current
@@ -105,6 +108,14 @@ struct FocusCalendarView: View {
         
         let dateString = dateFormatter.string(from: date)
         return dateString
+    }
+    
+    func RecordFormat(record: Int) -> String {
+        let minutes = record / 60  // 분
+        let seconds = record % 60  // 초
+
+        // mm:ss 형식으로 반환
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }
 

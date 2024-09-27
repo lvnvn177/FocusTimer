@@ -18,7 +18,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selectedView) {
-            TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: todoViewModel, FocusModel: FocusCalendarViewModel())
+            TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: todoViewModel, FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
                 .tabItem {
                     Image(systemName: "paperplane")
                 }
@@ -30,7 +30,7 @@ struct TabBarView: View {
                 }
                 .tag("SecondView")
             
-            SettingView()
+            SettingView(settingViewModel: settingViewModel)
                 .tabItem {
                     Image(systemName: "gearshape")
                 }

@@ -14,6 +14,9 @@ struct TimerView: View {
     
     @State private var showingStopAlert = false // Alert 표시 여부
     @ObservedObject var FocusModel: FocusCalendarViewModel
+    @ObservedObject var settingViewModel: SettingViewModel
+    
+    let audioManager = AudioPlayerManager.shared
     
     var body: some View {
         NavigationStack {
@@ -80,23 +83,13 @@ struct TimerView: View {
                 
                 HStack {
                     Button(action: {
+                        print("check_11:",settingViewModel.set.Alarm)
                         viewModel.isRunning ? viewModel.stopTimer() : viewModel.startTimer()
                         
                     }) {
                         Image(systemName: viewModel.isRunning ? "stop.circle" : "play.circle")
                             .font(.system(size: 60))
                             .foregroundStyle(viewModel.isRunning ? .red : .black)
-                    }
-                    
-                    Button(action: {
-//                        FocusModel.loadRecords()
-                        print("Test",FocusModel.focusRecords)
-                    }) {
-                        Text("TEST")
-                            .foregroundStyle(.black)
-                            .padding()
-                            .background(Color.white)
-                            .clipShape(.capsule)
                     }
                 }
                 .onLongPressGesture {
@@ -139,5 +132,5 @@ struct TimerView: View {
 }
 
 #Preview {
-    TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: TodoViewModel(), FocusModel: FocusCalendarViewModel())
+    TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: TodoViewModel(), FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
 }

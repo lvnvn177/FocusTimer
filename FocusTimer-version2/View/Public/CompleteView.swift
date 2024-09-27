@@ -14,17 +14,17 @@ struct CompleteView: View {
     var body: some View {
         
         VStack {
-            List {
-                ForEach(todoViewModel.todoItems.filter { $0.isActive}) { item in
-                    Text(item.title)
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .cornerRadius(8)
-                        .padding(.vertical, 2)
-                }
-            }
-            .listStyle(PlainListStyle())
-            .padding()
+//            List {
+//                ForEach(todoViewModel.todoItems.filter { $0.isActive}) { item in
+//                    Text(item.title)
+//                        .padding()
+//                        .background(Color.gray.opacity(0.2))
+//                        .cornerRadius(8)
+//                        .padding(.vertical, 2)
+//                }
+//            }
+//            .listStyle(PlainListStyle())
+//            .padding()
             
             Button(action: {
                 onReturn()

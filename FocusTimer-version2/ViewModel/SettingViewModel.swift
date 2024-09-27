@@ -6,19 +6,49 @@
 //
 
 import Foundation
+import iOS_Module
 
 class SettingViewModel: ObservableObject {
-    @Published var selectedSound: AlarmSound = .defaultSound
     
+    let SettingDataManager = DataManager<Setting>()
+    
+    @Published var set: Setting = Setting(Alarm: ".defaultSound", Back: ".none") {
+        didSet {
+            SettingDataManager.saveSetting(set, forKey: "Setting")
+        }
+    }
+    
+    
+    init() {
+        
+        self.set = SettingDataManager.loadSetting(forKey: "Setting") ?? Setting(Alarm: ".defaultSound", Back: ".none")
+    }
+    
+
+    func loadSetting() {
+        self.set = SettingDataManager.loadSetting(forKey: "Setting") ?? Setting(Alarm: ".defaultSound", Back: ".none")
+    }
     
     let alarmOptions: [AlarmSound] = [
         .sound1, .sound2, .defaultSound, .none
     ]
     
+    let SoundOptions: [BackgroundSound] = [
+        .b_sound1, .b_sound2, .none
+    ]
+    
+    
     enum AlarmSound: String, CaseIterable {
         case sound1 = "alarm_water.mp3"
         case sound2 = "alarm_pages.mp3"
-        case defaultSound = "기본 알림음"
-        case none = "알림음 끄기"
+        case defaultSound = ".defaultSound"
+        case none = "nonesound.mp3"
+    }
+    
+    enum BackgroundSound: String, CaseIterable {
+        case b_sound1 = "campfire.mp3"
+        case b_sound2 = "grinder.mp3"
+        case none = "nonesound.mp3"
     }
 }
+

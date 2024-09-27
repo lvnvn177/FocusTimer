@@ -27,11 +27,14 @@
 		71705CB52CA2F72F00B4F852 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB42CA2F72F00B4F852 /* TodoViewModel.swift */; };
 		71705CB72CA2F98000B4F852 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB62CA2F98000B4F852 /* TodoItem.swift */; };
 		71705CB92CA2FFCF00B4F852 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB82CA2FFCF00B4F852 /* CompleteView.swift */; };
-		71705CBF2CA31DDB00B4F852 /* alarm_campfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */; };
-		71705CC12CA31DEC00B4F852 /* alarm_grinder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */; };
+		71705CBF2CA31DDB00B4F852 /* campfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CBE2CA31DDB00B4F852 /* campfire.mp3 */; };
+		71705CC12CA31DEC00B4F852 /* grinder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC02CA31DEC00B4F852 /* grinder.mp3 */; };
 		71705CC32CA31DF400B4F852 /* alarm_water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC22CA31DF400B4F852 /* alarm_water.mp3 */; };
 		71705CC52CA31DFA00B4F852 /* alarm_pages.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CC42CA31DFA00B4F852 /* alarm_pages.mp3 */; };
 		71705CC82CA33A4F00B4F852 /* FocusCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CC72CA33A4F00B4F852 /* FocusCalendar+Extension.swift */; };
+		71705CCA2CA5AB9500B4F852 /* SoundSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CC92CA5AB9500B4F852 /* SoundSelectionView.swift */; };
+		71705CCC2CA5D2AE00B4F852 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CCB2CA5D2AE00B4F852 /* Setting.swift */; };
+		71705CCE2CA72A3000B4F852 /* nonesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CCD2CA72A3000B4F852 /* nonesound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,11 +58,15 @@
 		71705CB42CA2F72F00B4F852 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 		71705CB62CA2F98000B4F852 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		71705CB82CA2FFCF00B4F852 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
-		71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_campfire.mp3; sourceTree = "<group>"; };
-		71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_grinder.mp3; sourceTree = "<group>"; };
+		71705CBE2CA31DDB00B4F852 /* campfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = campfire.mp3; sourceTree = "<group>"; };
+		71705CC02CA31DEC00B4F852 /* grinder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grinder.mp3; sourceTree = "<group>"; };
 		71705CC22CA31DF400B4F852 /* alarm_water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_water.mp3; sourceTree = "<group>"; };
 		71705CC42CA31DFA00B4F852 /* alarm_pages.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_pages.mp3; sourceTree = "<group>"; };
 		71705CC72CA33A4F00B4F852 /* FocusCalendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FocusCalendar+Extension.swift"; sourceTree = "<group>"; };
+		71705CC92CA5AB9500B4F852 /* SoundSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSelectionView.swift; sourceTree = "<group>"; };
+		71705CCB2CA5D2AE00B4F852 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		71705CCD2CA72A3000B4F852 /* nonesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nonesound.mp3; sourceTree = "<group>"; };
+		71705CCF2CA7414800B4F852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,7 @@
 		71705C742CA05C1B00B4F852 /* FocusTimer-version2 */ = {
 			isa = PBXGroup;
 			children = (
+				71705CCF2CA7414800B4F852 /* Info.plist */,
 				71705CAC2CA2E42400B4F852 /* Extension */,
 				71705CAD2CA2E42A00B4F852 /* Resources */,
 				71705C832CA05D4F00B4F852 /* Model */,
@@ -118,6 +126,7 @@
 			children = (
 				71705CA82CA2E31A00B4F852 /* Record.swift */,
 				71705CB62CA2F98000B4F852 /* TodoItem.swift */,
+				71705CCB2CA5D2AE00B4F852 /* Setting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			children = (
 				71705C882CA05E6E00B4F852 /* SettingView.swift */,
 				71705CA62CA1C90200B4F852 /* ControlView.swift */,
+				71705CC92CA5AB9500B4F852 /* SoundSelectionView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -211,8 +221,9 @@
 		71705CC62CA31E0A00B4F852 /* Background */ = {
 			isa = PBXGroup;
 			children = (
-				71705CBE2CA31DDB00B4F852 /* alarm_campfire.mp3 */,
-				71705CC02CA31DEC00B4F852 /* alarm_grinder.mp3 */,
+				71705CCD2CA72A3000B4F852 /* nonesound.mp3 */,
+				71705CBE2CA31DDB00B4F852 /* campfire.mp3 */,
+				71705CC02CA31DEC00B4F852 /* grinder.mp3 */,
 			);
 			path = Background;
 			sourceTree = "<group>";
@@ -284,9 +295,10 @@
 				71705C992CA0787F00B4F852 /* Launch Screen.storyboard in Resources */,
 				71705C7D2CA05C1C00B4F852 /* Preview Assets.xcassets in Resources */,
 				71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */,
-				71705CC12CA31DEC00B4F852 /* alarm_grinder.mp3 in Resources */,
+				71705CC12CA31DEC00B4F852 /* grinder.mp3 in Resources */,
+				71705CCE2CA72A3000B4F852 /* nonesound.mp3 in Resources */,
 				71705CC32CA31DF400B4F852 /* alarm_water.mp3 in Resources */,
-				71705CBF2CA31DDB00B4F852 /* alarm_campfire.mp3 in Resources */,
+				71705CBF2CA31DDB00B4F852 /* campfire.mp3 in Resources */,
 				71705CC52CA31DFA00B4F852 /* alarm_pages.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,7 @@
 				71705CB52CA2F72F00B4F852 /* TodoViewModel.swift in Sources */,
 				71705CA92CA2E31A00B4F852 /* Record.swift in Sources */,
 				71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */,
+				71705CCA2CA5AB9500B4F852 /* SoundSelectionView.swift in Sources */,
 				71705C952CA0640400B4F852 /* FocusCalendarViewModel.swift in Sources */,
 				71705C8D2CA05EA400B4F852 /* FocusCalendarView.swift in Sources */,
 				71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */,
@@ -313,6 +326,7 @@
 				71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */,
 				71705C8B2CA05E8000B4F852 /* TimerView.swift in Sources */,
 				71705CB72CA2F98000B4F852 /* TodoItem.swift in Sources */,
+				71705CCC2CA5D2AE00B4F852 /* Setting.swift in Sources */,
 				71705CC82CA33A4F00B4F852 /* FocusCalendar+Extension.swift in Sources */,
 				71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */,
 			);
@@ -451,7 +465,7 @@
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "FocusTimer-version2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,7 +496,7 @@
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "FocusTimer-version2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

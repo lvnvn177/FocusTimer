@@ -14,19 +14,19 @@ class FocusCalendarViewModel: ObservableObject {
     
     @Published var focusRecords: [Record] = [] {
         didSet {
-            FocusDataManager.saveItem(focusRecords)
-            print("Current Records after saving:", focusRecords)
+            FocusDataManager.saveItem(focusRecords, forKey: "Record")
+//            print("Current Records after saving:", focusRecords)
         }
     }
     
     init() {
-        self.focusRecords = FocusDataManager.loadItem()
+        self.focusRecords = FocusDataManager.loadItem(forKey: "Record")
         
-        print("Loaded focus records: \(self.focusRecords)")
+//        print("Loaded focus records: \(self.focusRecords)")
     }
     
     func loadRecords() {
-        self.focusRecords = FocusDataManager.loadItem()
+        self.focusRecords = FocusDataManager.loadItem(forKey: "Record")
     }
     
     func addFocusRecord(for date: String, focusTime: Int) {
@@ -39,20 +39,20 @@ class FocusCalendarViewModel: ObservableObject {
             
             let newRecord = Record(date: date, Time: focusTime)
           
-            print("Final TEST \(newRecord.date): \(newRecord.Time)")
+//            print("Final TEST \(newRecord.date): \(newRecord.Time)")
             focusRecords.append(newRecord)
-            print("Current focusRecords after append:", focusRecords)
-            print("check_load:", FocusDataManager.loadItem())
+//            print("Current focusRecords after append:", focusRecords)
+//            print("check_load:", FocusDataManager.loadItem())
             
         }
     }
     
     func focusTime(for date: String) -> Int {
-        print("FFFF:",focusRecords)
+       
         for record in focusRecords {
-            print("Checking record date:", record.date, "with input date:", date)
+//            print("Checking record date:", record.date, "with input date:", date)
             if record.date == date {
-                print("Match found with focus time:", record.Time)
+//                print("Match found with focus time:", record.Time)
                 return record.Time
             }
         }
