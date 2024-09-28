@@ -80,6 +80,15 @@ class TimerViewModel: ObservableObject {
         audioManager.stopAudio()
     }
     
+    func resetTimer() {
+        timeRemaining = totalTime
+        timer?.invalidate()
+        timer = nil
+        isRunning = false
+        audioManager.stopAudio()
+        
+    }
+    
     
    private func updateTimer() {
        if timeRemaining > 0 { // 남아 있은 시간이 있으면 1초가 지나감

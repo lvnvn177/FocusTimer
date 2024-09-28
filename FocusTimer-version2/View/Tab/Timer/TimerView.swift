@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 import iOS_Module
 
 struct TimerView: View {
@@ -92,12 +93,14 @@ struct TimerView: View {
                             .foregroundStyle(viewModel.isRunning ? .red : .black)
                     }
                 }
-                .onLongPressGesture {
+                .onLongPressGesture(minimumDuration: 0.4) {
                     showingStopAlert = true
+                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                    generator.impactOccurred()
                 }
                 .confirmationDialog("title", isPresented: $showingStopAlert) {
                     Button(action: {
-                        
+                        viewModel.resetTimer()
                     }) {
                         Text("집중 그만하기")
                             .foregroundStyle(.black)
