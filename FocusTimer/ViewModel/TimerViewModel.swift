@@ -122,7 +122,7 @@ class TimerViewModel: ObservableObject {
         
         let updatedState = TimerAttributes.ContentState(remainingTime: TimeInterval(timeRemaining), timer: timerRange)
         
-        let content = ActivityContent(state: updatedState, staleDate: .now.addingTimeInterval(30))
+        _ = ActivityContent(state: updatedState, staleDate: .now.addingTimeInterval(30))
         
         Task {
             let content = ActivityContent(state: updatedState, staleDate: .now.addingTimeInterval(TimeInterval(timeRemaining)))
@@ -165,7 +165,7 @@ class TimerViewModel: ObservableObject {
                
                iOS_Module.PushNotificationManager.shared.scheduleLocalNotification(
                 title: "집중 끝",
-                body: "시간이 다 되었습니다!",
+                body: "수고하셨습니다!",
                 sound: UNNotificationSound(named: UNNotificationSoundName(rawValue: selectedSound)))
            }
            recordFocustime()

@@ -49,7 +49,7 @@ struct TimerView: View {
                     Circle()
                         .trim(from: 0, to: 1 - viewModel.progress)
                         .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(Color(red: 144/255, green: 238/255, blue: 144/255))
                         .rotationEffect(.degrees(-90))
                         .animation(.linear, value: viewModel.timeRemaining)
                     
