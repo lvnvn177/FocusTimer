@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "71705C712CA05C1B00B4F852"
-               BuildableName = "FocusTimer-version2.app"
-               BlueprintName = "FocusTimer-version2"
-               ReferencedContainer = "container:FocusTimer-version2.xcodeproj">
+               BuildableName = "FocusTimer.app"
+               BlueprintName = "FocusTimer"
+               ReferencedContainer = "container:FocusTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71705C712CA05C1B00B4F852"
-            BuildableName = "FocusTimer-version2.app"
-            BlueprintName = "FocusTimer-version2"
-            ReferencedContainer = "container:FocusTimer-version2.xcodeproj">
+            BuildableName = "FocusTimer.app"
+            BlueprintName = "FocusTimer"
+            ReferencedContainer = "container:FocusTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71705C712CA05C1B00B4F852"
-            BuildableName = "FocusTimer-version2.app"
-            BlueprintName = "FocusTimer-version2"
-            ReferencedContainer = "container:FocusTimer-version2.xcodeproj">
+            BuildableName = "FocusTimer.app"
+            BlueprintName = "FocusTimer"
+            ReferencedContainer = "container:FocusTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

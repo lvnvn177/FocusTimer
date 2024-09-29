@@ -12,7 +12,7 @@ struct FocusCalendarView: View {
     @ObservedObject var viewModel: FocusCalendarViewModel
 
     @State private var currentMonth: Date = Date() // 현재 달을 추적하는 변수
-    
+
     // 색상 결정: 집중 시간이 많을수록 색이 진해짐
     private func colorForFocusTime(_ focusTime: Int) -> Color {
         switch focusTime {
@@ -51,17 +51,17 @@ struct FocusCalendarView: View {
             
             let columns = Array(repeating: GridItem(.flexible(), spacing: 5), count: 7) // 7열로 설정 (월~일)
             
-//            HStack(spacing: 5) {
-//                ForEach(["S ", "M", "T", "W", "T", "F", "S"], id: \.self) { day in
-//                        Text(day)
-//                            .font(.caption)
-//                            .fontWeight(.bold)
-//                            .frame(width: 40, height: 40)
-//                            .multilineTextAlignment(.center)
-//                            .padding(.trailing, 5)
-//                }
-//            }
-//            .padding(.bottom, 5)
+            HStack(spacing: 5) {
+                ForEach(["S ", "M", "T", "W", "T", "F", "S"], id: \.self) { day in
+                        Text(day)
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .frame(width: 40, height: 40)
+                            .multilineTextAlignment(.center)
+                            .padding(.trailing, 5)
+                }
+            }
+            .padding(.bottom, 5)
             
             LazyVGrid(columns: columns, spacing: 5) {
                 ForEach(generateDatesForMonth(), id: \.self) { date in

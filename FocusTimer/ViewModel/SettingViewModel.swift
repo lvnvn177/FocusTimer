@@ -46,9 +46,9 @@ class SettingViewModel: ObservableObject {
     }
     
     enum BackgroundSound: String, CaseIterable {
-        case b_sound1 = "campfire.mp3"
-        case b_sound2 = "grinder.mp3"
-        case none = "nonesound.mp3"
+        case b_sound1 = "campfire"
+        case b_sound2 = "grinder"
+        case none = "nonesound"
     }
 }
 

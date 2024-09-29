@@ -121,9 +121,7 @@ struct TimerView: View {
                     TodoView(todoViewModel: TodoViewModel())
                 }
                 .navigationDestination(isPresented: $viewModel.showCompleteView) {
-                    CompleteView(onReturn: {
-                        
-                    }, todoViewModel: todoViewModel)
+                    CompleteView(viewModel: FocusCalendarViewModel())
                 }
                 
                 

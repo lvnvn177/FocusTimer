@@ -67,7 +67,7 @@ class TimerViewModel: ObservableObject {
             isRunning = true
             
             print("check_back:", settingViewModel.set.Back)
-            audioManager.playBackgroundAudio(named: "campfire", withExtension: "mp3")
+        audioManager.playBackgroundAudio(named: settingViewModel.set.Back, withExtension: "mp3")
             if timeRemaining <= 0 {
                 timeRemaining = totalTime
 //                audioManager.stopAudio()
