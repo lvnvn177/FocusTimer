@@ -20,6 +20,7 @@
 		714D88BA2CA8910D007BEEB2 /* FocusMonitorLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88A72CA8838C007BEEB2 /* FocusMonitorLiveActivity.swift */; };
 		714D88BD2CA8990F007BEEB2 /* TimerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88BC2CA8990F007BEEB2 /* TimerIntent.swift */; };
 		714D88BE2CA8990F007BEEB2 /* TimerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88BC2CA8990F007BEEB2 /* TimerIntent.swift */; };
+		714D88C22CA94AE6007BEEB2 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */; };
 		71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */; };
 		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
 		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
@@ -86,6 +87,8 @@
 		714D88AF2CA8838E007BEEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714D88B72CA8840A007BEEB2 /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
 		714D88BC2CA8990F007BEEB2 /* TimerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntent.swift; sourceTree = "<group>"; };
+		714D88C02CA9377D007BEEB2 /* FocusTimer-version2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FocusTimer-version2.entitlements"; sourceTree = "<group>"; };
+		714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		71705C722CA05C1B00B4F852 /* FocusTimer-version2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FocusTimer-version2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_base_appApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 		71705C742CA05C1B00B4F852 /* FocusTimer-version2 */ = {
 			isa = PBXGroup;
 			children = (
+				714D88C02CA9377D007BEEB2 /* FocusTimer-version2.entitlements */,
 				714D88BB2CA898F5007BEEB2 /* AppIntent */,
 				71705CCF2CA7414800B4F852 /* Info.plist */,
 				71705CAC2CA2E42400B4F852 /* Extension */,
@@ -287,6 +291,7 @@
 			children = (
 				71705C8A2CA05E7F00B4F852 /* TimerView.swift */,
 				71705CB22CA2F6F800B4F852 /* TodoView.swift */,
+				714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				71705CB52CA2F72F00B4F852 /* TodoViewModel.swift in Sources */,
 				71705CA92CA2E31A00B4F852 /* Record.swift in Sources */,
 				71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */,
+				714D88C22CA94AE6007BEEB2 /* LongPressGestureView.swift in Sources */,
 				71705CCA2CA5AB9500B4F852 /* SoundSelectionView.swift in Sources */,
 				71705C952CA0640400B4F852 /* FocusCalendarViewModel.swift in Sources */,
 				714D88B82CA8840A007BEEB2 /* TimerAttributes.swift in Sources */,
@@ -661,6 +667,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FocusTimer-version2/FocusTimer-version2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer-version2/Preview Content\"";
@@ -694,6 +701,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FocusTimer-version2/FocusTimer-version2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer-version2/Preview Content\"";

@@ -18,7 +18,7 @@ struct TimerView: View {
     @ObservedObject var settingViewModel: SettingViewModel
     
     let audioManager = AudioPlayerManager.shared
-    
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -92,11 +92,14 @@ struct TimerView: View {
                             .font(.system(size: 60))
                             .foregroundStyle(viewModel.isRunning ? .red : .black)
                     }
-                }
-                .onLongPressGesture(minimumDuration: 0.4) {
-                    showingStopAlert = true
-                    let generator = UIImpactFeedbackGenerator(style: .medium)
-                    generator.impactOccurred()
+                    .simultaneousGesture(
+                            LongPressGesture(minimumDuration: 1.0)
+                                .onEnded { _ in
+                                    showingStopAlert = true
+                                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                                    generator.impactOccurred()
+                                }
+                        )
                 }
                 .confirmationDialog("title", isPresented: $showingStopAlert) {
                     Button(action: {
