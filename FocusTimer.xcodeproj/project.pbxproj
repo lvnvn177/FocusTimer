@@ -22,7 +22,7 @@
 		714D88BE2CA8990F007BEEB2 /* TimerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88BC2CA8990F007BEEB2 /* TimerIntent.swift */; };
 		714D88C22CA94AE6007BEEB2 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */; };
 		714D88C42CA96785007BEEB2 /* OceanWave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 714D88C32CA96785007BEEB2 /* OceanWave.mp3 */; };
-		71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */; };
+		71705C762CA05C1B00B4F852 /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */; };
 		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
 		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
 		71705C7D2CA05C1C00B4F852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */; };
@@ -92,7 +92,7 @@
 		714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		714D88C32CA96785007BEEB2 /* OceanWave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OceanWave.mp3; sourceTree = "<group>"; };
 		71705C722CA05C1B00B4F852 /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_base_appApp.swift; sourceTree = "<group>"; };
+		71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71705C792CA05C1C00B4F852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71705C7C2CA05C1C00B4F852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 				71705C842CA05D6200B4F852 /* View */,
 				71705C852CA05D6C00B4F852 /* ViewModel */,
 				71705C792CA05C1C00B4F852 /* Assets.xcassets */,
-				71705C752CA05C1B00B4F852 /* iOS_base_appApp.swift */,
+				71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */,
 				71705C7B2CA05C1C00B4F852 /* Preview Content */,
 			);
 			path = FocusTimer;
@@ -477,7 +477,7 @@
 				71705CCC2CA5D2AE00B4F852 /* Setting.swift in Sources */,
 				714D88BD2CA8990F007BEEB2 /* TimerIntent.swift in Sources */,
 				71705CC82CA33A4F00B4F852 /* FocusCalendar+Extension.swift in Sources */,
-				71705C762CA05C1B00B4F852 /* iOS_base_appApp.swift in Sources */,
+				71705C762CA05C1B00B4F852 /* FocusTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,7 +679,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusTimer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "저스트 스타트";
+				INFOPLIST_KEY_CFBundleDisplayName = "데일리 포커스";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -714,7 +714,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusTimer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "저스트 스타트";
+				INFOPLIST_KEY_CFBundleDisplayName = "데일리 포커스";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

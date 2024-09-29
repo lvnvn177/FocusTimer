@@ -34,7 +34,7 @@ class SettingViewModel: ObservableObject {
     ]
     
     let SoundOptions: [BackgroundSound] = [
-        .b_sound1, .b_sound2, .none
+        .b_sound1, .none
     ]
     
     
@@ -46,8 +46,8 @@ class SettingViewModel: ObservableObject {
     }
     
     enum BackgroundSound: String, CaseIterable {
-        case b_sound1 = "Campfire"
-        case b_sound2 = "OceanWave"
+        case b_sound1 = "OceanWave"
+//        case b_sound2 = "Campfire"
         case none = "None"
     }
 }

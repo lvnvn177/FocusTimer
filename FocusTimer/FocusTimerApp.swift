@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct iOS_base_appApp: App {
+struct FocusTimerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+//iOS_base_appApp
