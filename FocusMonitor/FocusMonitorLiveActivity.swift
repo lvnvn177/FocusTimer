@@ -30,7 +30,7 @@ struct FocusMonitorLiveActivity: Widget {
                 Text(timerInterval: context.state.timer, countsDown: true)
                     .font(.system(size: 44, weight: .semibold))
                     .foregroundStyle(.black)
-                
+                    .multilineTextAlignment(.center)
                 Button(action: {
                     
                 }) {

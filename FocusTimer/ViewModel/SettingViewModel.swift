@@ -39,16 +39,16 @@ class SettingViewModel: ObservableObject {
     
     
     enum AlarmSound: String, CaseIterable {
-        case sound1 = "alarm_water.mp3"
-        case sound2 = "alarm_pages.mp3"
+        case sound1 = "Water.mp3"
+        case sound2 = "Pages.mp3"
         case defaultSound = ".defaultSound"
-        case none = "nonesound.mp3"
+        case none = "None.mp3"
     }
     
     enum BackgroundSound: String, CaseIterable {
-        case b_sound1 = "campfire"
-        case b_sound2 = "grinder"
-        case none = "nonesound"
+        case b_sound1 = "Campfire"
+        case b_sound2 = "OceanWave"
+        case none = "None"
     }
 }
 

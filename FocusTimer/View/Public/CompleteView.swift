@@ -21,12 +21,21 @@ struct CompleteView: View {
             Button(action: {
                
             }) {
-                Text("오늘의 집중 : \(RecordFormat(record: findTime(for: DateToString(date: Date()), in: viewModel.focusRecords) ?? 0))")
-                    .font(.title)
-                    .padding()
-                    .background(Color.white)
-                    .foregroundColor(.black)
-                    .cornerRadius(10)
+                VStack{
+                    Text("오늘의 집중")
+                        .font(.title)
+                        .padding()
+                        .background(Color.white)
+                        .foregroundStyle(.black)
+                        .cornerRadius(10)
+                    Text("\(RecordFormat(record: findTime(for: DateToString(date: Date()), in: viewModel.focusRecords) ?? 0))")
+                        .font(.title)
+                        .padding()
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                }
+                
             }
             .padding()
         }

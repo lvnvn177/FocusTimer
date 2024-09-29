@@ -20,22 +20,22 @@ struct SettingView: View {
                             Text("알림 및 백그라운드")
                         }
                     } header: {
-                        Text("사운드")
+                        Text("설정")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .padding(.bottom, 5)
                     }
                     
-                    Section {
-                        NavigationLink(destination: ControlView()) { 
-                            Text("제어")
-                        }
-                    } header: {
-                        Text("제어")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                            .padding(.bottom, 5)
-                    }
+//                    Section {
+//                        NavigationLink(destination: ControlView()) { 
+//                            Text("제어")
+//                        }
+//                    } header: {
+//                        Text("제어")
+//                            .font(.headline)
+//                            .fontWeight(.bold)
+//                            .padding(.bottom, 5)
+//                    }
                 }
             }
         }

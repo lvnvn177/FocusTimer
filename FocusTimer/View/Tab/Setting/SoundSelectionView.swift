@@ -16,7 +16,7 @@ struct SoundSelectionView: View {
             Section {
                 ForEach(settingViewModel.alarmOptions, id: \.self) { sound in
                     HStack {
-                        Text(sound.rawValue)
+                        Text(sound.rawValue.replacingOccurrences(of: ".mp3", with: ""))
                         Spacer()
                         if settingViewModel.set.Alarm == sound.rawValue {
                             Image(systemName: "checkmark")
