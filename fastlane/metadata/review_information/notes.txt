@@ -1,0 +1,3 @@
+iphone을 대상으로 생각하여 심사 제출을 하였지만 Xcode의 Supported Destinations에서 ipad를 추가하는 실수로 해당 스크린샷을 필요로 하였고
+기존 사진에서 크기만 조정하는 방법으로 하였다가 Guideline 2.3.3 - Performance - Accurate Metadata 리젝 사유를 받았습니다. 
+수정 후 재빌드를 하였고 ipad 스크린샷은 필수가 아니라고 변경되었기에 해당 스크린샷 삭제후 재심사 제출합니다.
