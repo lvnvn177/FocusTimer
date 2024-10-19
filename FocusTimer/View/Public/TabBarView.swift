@@ -20,13 +20,13 @@ struct TabBarView: View {
         TabView(selection: $selectedView) {
             TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: todoViewModel, FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
                 .tabItem {
-                    Image(systemName: "paperplane")
+                    Image(systemName: "gauge.with.needle")
                 }
                 .tag("MainView")
             
             FocusCalendarView(viewModel: FocusCalendarViewModel())
                 .tabItem {
-                    Image(systemName: "clipboard")
+                    Image(systemName: "calendar")
                 }
                 .tag("SecondView")
             
@@ -36,9 +36,12 @@ struct TabBarView: View {
                 }
                 .tag("SettingView")
             
-                .tint(.black)
+                
         }
+        
     }
+        
+        
 }
 
 #Preview {

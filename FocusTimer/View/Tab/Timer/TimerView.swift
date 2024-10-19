@@ -22,23 +22,6 @@ struct TimerView: View {
     var body: some View {
         NavigationStack {
             VStack {
-//                Spacer()
-//                HStack {
-//                    Button(action: {
-//                        
-//                    }) {
-//                        Text("오늘 할 일")
-//                            .foregroundStyle(.black)
-//                            .padding()
-//                            .background(Color.white)
-//                            .clipShape(.capsule)
-//                            .overlay(
-//                                RoundedRectangle(cornerRadius: 10)
-//                                    .stroke(Color.black, lineWidth: 2)
-//                            )
-//                    }
-//                }
-//                .padding()
                 
                 ZStack {
                     Circle()
@@ -52,15 +35,16 @@ struct TimerView: View {
                         .foregroundStyle(Color(red: 144/255, green: 238/255, blue: 144/255))
                         .rotationEffect(.degrees(-90))
                         .animation(.linear, value: viewModel.timeRemaining)
+                        
                     
                     
                     if viewModel.isRunning {
-//                        Text(viewModel.timeRemaining.timeString)
-//                            .font(.largeTitle)
-//                            .padding()
+                        Text(viewModel.timeRemaining.timeString)
+                            .font(.largeTitle)
+                            .padding()
                     } else {
                         Picker("Minutes", selection: $viewModel.selectedMinutes) {
-                            ForEach(0..<120) { minute in
+                            ForEach(0..<121) { minute in
                                 Text("\(minute)").tag(minute)
                             }
                         }
@@ -73,14 +57,14 @@ struct TimerView: View {
                 }
                 .frame(maxWidth: 300, maxHeight: 300)
                 .padding(70)
-                VStack {
-                    if viewModel.isRunning {
-                        Text(viewModel.timeRemaining.timeString)
-                            .font(.largeTitle)
-                            .padding()
-                    }
-                }
-                .padding(.bottom, 150)
+//                VStack {
+//                    if viewModel.isRunning {
+//                        Text(viewModel.timeRemaining.timeString)
+//                            .font(.largeTitle)
+//                            .padding()
+//                    }
+//                }
+//                .padding(.bottom, 150)
                 
                 HStack {
                     Button(action: {
@@ -132,7 +116,11 @@ struct TimerView: View {
                 print("Appear:", FocusModel.focusRecords)
             }
         }
+        
     }
+        
+    
+        
 }
 
 #Preview {

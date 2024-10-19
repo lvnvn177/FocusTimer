@@ -17,10 +17,11 @@ struct FocusCalendarView: View {
     private func colorForFocusTime(_ focusTime: Int) -> Color {
         switch focusTime {
         case 0: return Color.gray.opacity(0.1)
-        case 1...30: return Color.green.opacity(0.3)
-        case 31...60: return Color.green.opacity(0.6)
-        case 61...120: return Color.green.opacity(0.8)
-        default: return Color.green
+        case 1...30: return Color.green.opacity(0.2)
+        case 31...60: return Color.green.opacity(0.4)
+        case 61...90: return Color.green.opacity(0.6)
+        case 91...120: return Color.green.opacity(0.8)
+        default: return Color.green.opacity(0.1)
         }
     }
     
@@ -65,18 +66,22 @@ struct FocusCalendarView: View {
             
             LazyVGrid(columns: columns, spacing: 5) {
                 ForEach(generateDatesForMonth(), id: \.self) { date in
-                    let focusTime = viewModel.focusTime(for: date)
-                    let _ = print("Date:",date)
-                    let _ = print("Focus time for date \(date): \(focusTime)")
-                    
-                    colorForFocusTime(focusTime)
-                        .frame(width: 40, height: 40)
-                        .cornerRadius(4)
-                        .overlay(
-                            Text(focusTime > 0 ? "\(RecordFormat(record: focusTime))" : "")
-                                .font(.caption2)
-                                .foregroundColor(.white)
-                        )
+                    if let date = date {
+                        let focusTime = viewModel.focusTime(for: date) // 정수형으로 직접 사용
+
+                        colorForFocusTime(focusTime)
+                            .frame(width: 40, height: 40)
+                            .cornerRadius(4)
+                            .overlay(
+                                Text(focusTime > 0 ? "\(RecordFormat(record: focusTime))" : "")
+                                    .font(.caption2)
+                                    .foregroundColor(.white)
+                            )
+                    } else {
+                        // 날짜가 없는 경우 빈 칸 처리
+                        Color.clear
+                            .frame(width: 40, height: 40)
+                    }
                 }
             }
             .padding()
@@ -86,14 +91,19 @@ struct FocusCalendarView: View {
             viewModel.loadRecords()
         }
     }
-    func generateDatesForMonth() -> [String] {
+    func generateDatesForMonth() -> [String?] {
         let calendar = Calendar.current
-        let range = calendar.range(of: .day, in: .month, for: currentMonth)!
         let components = calendar.dateComponents([.year, .month], from: currentMonth)
-        var dates: [String] = []
         
+        guard let firstDayofMonth = calendar.date(from: components) else { return [] }
+        
+        let weekday = calendar.component(.weekday, from: firstDayofMonth) - 1
+        
+        var dates: [String?] = Array(repeating: nil, count: weekday)
+        
+        let range = calendar.range(of: .day, in: .month, for: currentMonth)!
         for day in range {
-            if let date = calendar.date(from: DateComponents(year: components.year, month: components.month, day: day)) {
+            if let date = calendar.date(byAdding: .day, value: day - 1, to: firstDayofMonth) {
                 let dateString = DateToString(date: date)
                 dates.append(dateString)
             }
