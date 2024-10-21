@@ -24,11 +24,13 @@ default_platform(:ios)
     )
     clear_derived_data
     increment_build_number(
+	timeout: 600,
     	build_number: latest_testflight_build_number + 1
     )
     gym(
      clean: true,
      scheme: "FocusTimer",
+     timeout: 600,
      export_method: "app-store",
      export_options: {
        provisioningProfiles: {
