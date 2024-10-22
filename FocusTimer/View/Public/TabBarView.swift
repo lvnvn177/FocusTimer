@@ -18,7 +18,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selectedView) {
-            TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: todoViewModel, FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
+            TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()),  FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
                 .tabItem {
                     Image(systemName: "gauge.with.needle")
                 }

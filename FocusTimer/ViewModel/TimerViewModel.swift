@@ -28,14 +28,16 @@ class TimerViewModel: ObservableObject {
     
     @ObservedObject var settingViewModel: SettingViewModel
     
+    
     var focusCalendarViewModel: FocusCalendarViewModel
     
     let audioManager = AudioPlayerManager.shared
     
-    
+   
     
     init(settingViewModel: SettingViewModel, focusCalendarViewModel: FocusCalendarViewModel) {
             print("init 호출됨")
+     
             self.settingViewModel = settingViewModel
             self.focusCalendarViewModel = focusCalendarViewModel
 //            

@@ -36,4 +36,6 @@
 # ipa
 **/FocusTimer.ipa
 
+**/Secrets.xcconfig
+**/Info.plist
 # End of https://www.toptal.com/developers/gitignore/api/fastlane

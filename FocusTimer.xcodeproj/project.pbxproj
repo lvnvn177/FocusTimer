@@ -24,6 +24,7 @@
 		714D88C42CA96785007BEEB2 /* OceanWave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 714D88C32CA96785007BEEB2 /* OceanWave.mp3 */; };
 		716F31152CC37C01004FDF78 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31142CC37C01004FDF78 /* Color + Extension.swift */; };
 		716F31172CC6B7EB004FDF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31162CC6B7EB004FDF78 /* AppDelegate.swift */; };
+		716F311B2CC76C6F004FDF78 /* MyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F311A2CC76C6F004FDF78 /* MyConfig.swift */; };
 		71705C762CA05C1B00B4F852 /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */; };
 		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
 		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
@@ -95,6 +96,8 @@
 		714D88C32CA96785007BEEB2 /* OceanWave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OceanWave.mp3; sourceTree = "<group>"; };
 		716F31142CC37C01004FDF78 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		716F31162CC6B7EB004FDF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		716F311A2CC76C6F004FDF78 /* MyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfig.swift; sourceTree = "<group>"; };
+		716F311C2CC77F91004FDF78 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		71705C722CA05C1B00B4F852 /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 		71705C692CA05C1B00B4F852 = {
 			isa = PBXGroup;
 			children = (
+				716F311C2CC77F91004FDF78 /* Secret.xcconfig */,
 				71705C742CA05C1B00B4F852 /* FocusTimer */,
 				714D88A42CA8838C007BEEB2 /* FocusMonitor */,
 				714D889F2CA8838C007BEEB2 /* Frameworks */,
@@ -198,6 +202,7 @@
 		71705C742CA05C1B00B4F852 /* FocusTimer */ = {
 			isa = PBXGroup;
 			children = (
+				716F311A2CC76C6F004FDF78 /* MyConfig.swift */,
 				714D88C02CA9377D007BEEB2 /* FocusTimer.entitlements */,
 				714D88BB2CA898F5007BEEB2 /* AppIntent */,
 				71705CAC2CA2E42400B4F852 /* Extension */,
@@ -474,6 +479,7 @@
 				71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */,
 				716F31172CC6B7EB004FDF78 /* AppDelegate.swift in Sources */,
 				71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */,
+				716F311B2CC76C6F004FDF78 /* MyConfig.swift in Sources */,
 				71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */,
 				71705CB12CA2EA0900B4F852 /* Timer+Extension.swift in Sources */,
 				71705C872CA05E0500B4F852 /* TabBarView.swift in Sources */,
@@ -500,11 +506,12 @@
 /* Begin XCBuildConfiguration section */
 		714D88B42CA8838E007BEEB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusMonitor/Info.plist;
@@ -527,11 +534,12 @@
 		};
 		714D88B52CA8838E007BEEB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusMonitor/Info.plist;
@@ -554,6 +562,7 @@
 		};
 		71705C7E2CA05C1C00B4F852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -617,6 +626,7 @@
 		};
 		71705C7F2CA05C1C00B4F852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -673,6 +683,7 @@
 		};
 		71705C812CA05C1C00B4F852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -715,6 +726,7 @@
 		};
 		71705C822CA05C1C00B4F852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F311C2CC77F91004FDF78 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

@@ -11,16 +11,19 @@ import iOS_Module
 
 struct TimerView: View {
     @ObservedObject var viewModel: TimerViewModel
-    @ObservedObject var todoViewModel: TodoViewModel // TodoViewModel을 외부에서 받아서 사용
+    
     
     @State private var showingStopAlert = false // Alert 표시 여부
-    
 
+    @StateObject private var adManager = ADManager(adUnitID: MyConfig.bannerAdUnitID)
     @ObservedObject var FocusModel: FocusCalendarViewModel
     @ObservedObject var settingViewModel: SettingViewModel
     
     let audioManager = AudioPlayerManager.shared
+    
+   
 
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -70,7 +73,7 @@ struct TimerView: View {
                 
                 HStack {
                     Button(action: {
-                        print("",settingViewModel.set.Alarm)
+                        _ = settingViewModel.set.Alarm
                         viewModel.isRunning ? viewModel.stopTimer() : viewModel.startTimer()
                         
                     }) {
@@ -89,7 +92,7 @@ struct TimerView: View {
                 }
                 .confirmationDialog("title", isPresented: $showingStopAlert) {
                     Button(action: {
-                      
+                        showAd()
                         viewModel.resetTimer()
                        
                     }) {
@@ -115,7 +118,7 @@ struct TimerView: View {
                 
             }
             .onAppear {
-              
+                adManager.loadAd()  // 광고 로드
                 PushNotificationManager.shared.requestAuthorization()
                 FocusModel.loadRecords()
                 print("Appear:", FocusModel.focusRecords)
@@ -123,11 +126,16 @@ struct TimerView: View {
         }
         
     }
-        
+    private func showAd() {
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+        let rootVC = windowScene.windows.first?.rootViewController {
+            adManager.showAd(from: rootVC)
+        }
+    }
 
         
 }
 
 #Preview {
-    TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()), todoViewModel: TodoViewModel(), FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
+    TimerView(viewModel: TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel()),  FocusModel: FocusCalendarViewModel(), settingViewModel: SettingViewModel())
 }
