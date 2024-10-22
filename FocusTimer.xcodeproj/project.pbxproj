@@ -88,7 +88,6 @@
 		714D88A92CA8838C007BEEB2 /* FocusMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusMonitor.swift; sourceTree = "<group>"; };
 		714D88AB2CA8838C007BEEB2 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		714D88AD2CA8838E007BEEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		714D88AF2CA8838E007BEEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714D88B72CA8840A007BEEB2 /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
 		714D88BC2CA8990F007BEEB2 /* TimerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntent.swift; sourceTree = "<group>"; };
 		714D88C02CA9377D007BEEB2 /* FocusTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusTimer.entitlements; sourceTree = "<group>"; };
@@ -166,7 +165,6 @@
 				714D88A92CA8838C007BEEB2 /* FocusMonitor.swift */,
 				714D88AB2CA8838C007BEEB2 /* AppIntent.swift */,
 				714D88AD2CA8838E007BEEB2 /* Assets.xcassets */,
-				714D88AF2CA8838E007BEEB2 /* Info.plist */,
 			);
 			path = FocusMonitor;
 			sourceTree = "<group>";
