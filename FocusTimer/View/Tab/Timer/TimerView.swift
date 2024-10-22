@@ -14,6 +14,8 @@ struct TimerView: View {
     @ObservedObject var todoViewModel: TodoViewModel // TodoViewModel을 외부에서 받아서 사용
     
     @State private var showingStopAlert = false // Alert 표시 여부
+    
+
     @ObservedObject var FocusModel: FocusCalendarViewModel
     @ObservedObject var settingViewModel: SettingViewModel
     
@@ -68,7 +70,7 @@ struct TimerView: View {
                 
                 HStack {
                     Button(action: {
-                        print("check_11:",settingViewModel.set.Alarm)
+                        print("",settingViewModel.set.Alarm)
                         viewModel.isRunning ? viewModel.stopTimer() : viewModel.startTimer()
                         
                     }) {
@@ -87,7 +89,9 @@ struct TimerView: View {
                 }
                 .confirmationDialog("title", isPresented: $showingStopAlert) {
                     Button(action: {
+                      
                         viewModel.resetTimer()
+                       
                     }) {
                         Text("집중 그만하기")
                             .foregroundStyle(.black)
@@ -111,6 +115,7 @@ struct TimerView: View {
                 
             }
             .onAppear {
+              
                 PushNotificationManager.shared.requestAuthorization()
                 FocusModel.loadRecords()
                 print("Appear:", FocusModel.focusRecords)
@@ -119,7 +124,7 @@ struct TimerView: View {
         
     }
         
-    
+
         
 }
 

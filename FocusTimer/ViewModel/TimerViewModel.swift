@@ -88,6 +88,7 @@ class TimerViewModel: ObservableObject {
     }
     
     func resetTimer() {
+        stopLiveActivity()
         timeRemaining = totalTime
         timer?.invalidate()
         timer = nil

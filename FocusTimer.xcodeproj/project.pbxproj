@@ -23,6 +23,7 @@
 		714D88C22CA94AE6007BEEB2 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */; };
 		714D88C42CA96785007BEEB2 /* OceanWave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 714D88C32CA96785007BEEB2 /* OceanWave.mp3 */; };
 		716F31152CC37C01004FDF78 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31142CC37C01004FDF78 /* Color + Extension.swift */; };
+		716F31172CC6B7EB004FDF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31162CC6B7EB004FDF78 /* AppDelegate.swift */; };
 		71705C762CA05C1B00B4F852 /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */; };
 		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
 		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		714D88C12CA94AE6007BEEB2 /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		714D88C32CA96785007BEEB2 /* OceanWave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OceanWave.mp3; sourceTree = "<group>"; };
 		716F31142CC37C01004FDF78 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		716F31162CC6B7EB004FDF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71705C722CA05C1B00B4F852 /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,7 +123,6 @@
 		71705CC92CA5AB9500B4F852 /* SoundSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSelectionView.swift; sourceTree = "<group>"; };
 		71705CCB2CA5D2AE00B4F852 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		71705CCD2CA72A3000B4F852 /* None.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = None.mp3; sourceTree = "<group>"; };
-		71705CCF2CA7414800B4F852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +200,6 @@
 			children = (
 				714D88C02CA9377D007BEEB2 /* FocusTimer.entitlements */,
 				714D88BB2CA898F5007BEEB2 /* AppIntent */,
-				71705CCF2CA7414800B4F852 /* Info.plist */,
 				71705CAC2CA2E42400B4F852 /* Extension */,
 				71705CAD2CA2E42A00B4F852 /* Resources */,
 				71705C832CA05D4F00B4F852 /* Model */,
@@ -208,6 +208,7 @@
 				71705C792CA05C1C00B4F852 /* Assets.xcassets */,
 				71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */,
 				71705C7B2CA05C1C00B4F852 /* Preview Content */,
+				716F31162CC6B7EB004FDF78 /* AppDelegate.swift */,
 			);
 			path = FocusTimer;
 			sourceTree = "<group>";
@@ -471,6 +472,7 @@
 				714D88B82CA8840A007BEEB2 /* TimerAttributes.swift in Sources */,
 				71705C8D2CA05EA400B4F852 /* FocusCalendarView.swift in Sources */,
 				71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */,
+				716F31172CC6B7EB004FDF78 /* AppDelegate.swift in Sources */,
 				71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */,
 				71705C892CA05E6E00B4F852 /* SettingView.swift in Sources */,
 				71705CB12CA2EA0900B4F852 /* Timer+Extension.swift in Sources */,
@@ -677,7 +679,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
@@ -719,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;

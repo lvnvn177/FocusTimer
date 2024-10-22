@@ -7,7 +7,25 @@
       "location" : "https://github.com/lvnvn177/iOS-Module.git",
       "state" : {
         "branch" : "main",
-        "revision" : "92197413474cd3bc0bdc4a68edc7bb2d5361cdfa"
+        "revision" : "ebeab98e6535e58875aaec2ddeec2d12a94cfb97"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-mobile-ads",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      "state" : {
+        "revision" : "1e60477cbc4c4868ec8414524f8cd163132753ff",
+        "version" : "11.10.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-user-messaging-platform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
+      "state" : {
+        "revision" : "74f2ec169551c3b924947b473716142a0b983e10",
+        "version" : "2.6.0"
       }
     }
   ],
