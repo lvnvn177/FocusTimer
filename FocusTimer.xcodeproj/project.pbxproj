@@ -25,8 +25,8 @@
 		716F31152CC37C01004FDF78 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31142CC37C01004FDF78 /* Color + Extension.swift */; };
 		716F31172CC6B7EB004FDF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F31162CC6B7EB004FDF78 /* AppDelegate.swift */; };
 		716F311B2CC76C6F004FDF78 /* MyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F311A2CC76C6F004FDF78 /* MyConfig.swift */; };
-		716F311E2CCBD29A004FDF78 /* 캠프파이어.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 716F311D2CCBD29A004FDF78 /* 캠프파이어.mp3 */; };
 		716F31202CCBD344004FDF78 /* 종.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 716F311F2CCBD344004FDF78 /* 종.mp3 */; };
+		716F31222CCBF548004FDF78 /* 캠프파이어.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 716F31212CCBF548004FDF78 /* 캠프파이어.mp3 */; };
 		71705C762CA05C1B00B4F852 /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */; };
 		71705C782CA05C1B00B4F852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C772CA05C1B00B4F852 /* ContentView.swift */; };
 		71705C7A2CA05C1C00B4F852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71705C792CA05C1C00B4F852 /* Assets.xcassets */; };
@@ -98,8 +98,8 @@
 		716F31162CC6B7EB004FDF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		716F311A2CC76C6F004FDF78 /* MyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfig.swift; sourceTree = "<group>"; };
 		716F311C2CC77F91004FDF78 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
-		716F311D2CCBD29A004FDF78 /* 캠프파이어.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "캠프파이어.mp3"; sourceTree = "<group>"; };
 		716F311F2CCBD344004FDF78 /* 종.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "종.mp3"; sourceTree = "<group>"; };
+		716F31212CCBF548004FDF78 /* 캠프파이어.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "캠프파이어.mp3"; sourceTree = "<group>"; };
 		71705C722CA05C1B00B4F852 /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71705C752CA05C1B00B4F852 /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
 		71705C772CA05C1B00B4F852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		71705CC62CA31E0A00B4F852 /* Background */ = {
 			isa = PBXGroup;
 			children = (
-				716F311D2CCBD29A004FDF78 /* 캠프파이어.mp3 */,
+				716F31212CCBF548004FDF78 /* 캠프파이어.mp3 */,
 				714D88C32CA96785007BEEB2 /* 해안가.mp3 */,
 				71705CCD2CA72A3000B4F852 /* 없음.mp3 */,
 			);
@@ -442,7 +442,7 @@
 				71705CC32CA31DF400B4F852 /* 물.mp3 in Resources */,
 				714D88C42CA96785007BEEB2 /* 해안가.mp3 in Resources */,
 				71705CC52CA31DFA00B4F852 /* 페이지 넘김.mp3 in Resources */,
-				716F311E2CCBD29A004FDF78 /* 캠프파이어.mp3 in Resources */,
+				716F31222CCBF548004FDF78 /* 캠프파이어.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,7 +692,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
@@ -735,7 +735,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
