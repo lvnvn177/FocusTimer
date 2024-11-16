@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import iOS_Module
+import DataManager
 
 class FocusCalendarViewModel: ObservableObject {
     

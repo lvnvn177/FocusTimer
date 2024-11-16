@@ -39,7 +39,6 @@
 		71705C932CA0627C00B4F852 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C922CA0627C00B4F852 /* SettingViewModel.swift */; };
 		71705C952CA0640400B4F852 /* FocusCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705C942CA0640400B4F852 /* FocusCalendarViewModel.swift */; };
 		71705C992CA0787F00B4F852 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71705C982CA0787F00B4F852 /* Launch Screen.storyboard */; };
-		71705CA42CA1906A00B4F852 /* iOS-Module in Frameworks */ = {isa = PBXBuildFile; productRef = 71705CA32CA1906A00B4F852 /* iOS-Module */; };
 		71705CA72CA1C90200B4F852 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CA62CA1C90200B4F852 /* ControlView.swift */; };
 		71705CA92CA2E31A00B4F852 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CA82CA2E31A00B4F852 /* Record.swift */; };
 		71705CB12CA2EA0900B4F852 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CB02CA2EA0900B4F852 /* Timer+Extension.swift */; };
@@ -54,6 +53,11 @@
 		71705CCA2CA5AB9500B4F852 /* SoundSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CC92CA5AB9500B4F852 /* SoundSelectionView.swift */; };
 		71705CCC2CA5D2AE00B4F852 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71705CCB2CA5D2AE00B4F852 /* Setting.swift */; };
 		71705CCE2CA72A3000B4F852 /* 없음.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71705CCD2CA72A3000B4F852 /* 없음.mp3 */; };
+		7182B0312CE8CA53001D7C33 /* ADManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7182B0302CE8CA53001D7C33 /* ADManager */; };
+		7182B0332CE8CA53001D7C33 /* ApiManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7182B0322CE8CA53001D7C33 /* ApiManager */; };
+		7182B0352CE8CA53001D7C33 /* DataManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7182B0342CE8CA53001D7C33 /* DataManager */; };
+		7182B0372CE8CCFE001D7C33 /* AudioPlayerManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7182B0362CE8CCFE001D7C33 /* AudioPlayerManager */; };
+		7182B0392CE8E2C7001D7C33 /* NotificationManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7182B0382CE8E2C7001D7C33 /* NotificationManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +147,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71705CA42CA1906A00B4F852 /* iOS-Module in Frameworks */,
+				7182B0372CE8CCFE001D7C33 /* AudioPlayerManager in Frameworks */,
+				7182B0312CE8CA53001D7C33 /* ADManager in Frameworks */,
+				7182B0392CE8E2C7001D7C33 /* NotificationManager in Frameworks */,
+				7182B0332CE8CA53001D7C33 /* ApiManager in Frameworks */,
+				7182B0352CE8CA53001D7C33 /* DataManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +382,11 @@
 			);
 			name = FocusTimer;
 			packageProductDependencies = (
-				71705CA32CA1906A00B4F852 /* iOS-Module */,
+				7182B0302CE8CA53001D7C33 /* ADManager */,
+				7182B0322CE8CA53001D7C33 /* ApiManager */,
+				7182B0342CE8CA53001D7C33 /* DataManager */,
+				7182B0362CE8CCFE001D7C33 /* AudioPlayerManager */,
+				7182B0382CE8E2C7001D7C33 /* NotificationManager */,
 			);
 			productName = "iOS-base-app";
 			productReference = 71705C722CA05C1B00B4F852 /* FocusTimer.app */;
@@ -408,7 +420,7 @@
 			);
 			mainGroup = 71705C692CA05C1B00B4F852;
 			packageReferences = (
-				71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */,
+				7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */,
 			);
 			productRefGroup = 71705C732CA05C1B00B4F852 /* Products */;
 			projectDirPath = "";
@@ -513,7 +525,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusMonitor/Info.plist;
@@ -541,7 +553,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusMonitor/Info.plist;
@@ -692,7 +704,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
@@ -713,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.korea.lvnvn.FocusTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -735,7 +747,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FocusTimer/FocusTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = J482Q29P6S;
 				ENABLE_PREVIEWS = YES;
@@ -756,7 +768,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.korea.lvnvn.FocusTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -802,7 +814,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */ = {
+		7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lvnvn177/iOS-Module.git";
 			requirement = {
@@ -813,10 +825,30 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		71705CA32CA1906A00B4F852 /* iOS-Module */ = {
+		7182B0302CE8CA53001D7C33 /* ADManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71705CA22CA1906A00B4F852 /* XCRemoteSwiftPackageReference "iOS-Module" */;
-			productName = "iOS-Module";
+			package = 7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = ADManager;
+		};
+		7182B0322CE8CA53001D7C33 /* ApiManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = ApiManager;
+		};
+		7182B0342CE8CA53001D7C33 /* DataManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = DataManager;
+		};
+		7182B0362CE8CCFE001D7C33 /* AudioPlayerManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = AudioPlayerManager;
+		};
+		7182B0382CE8E2C7001D7C33 /* NotificationManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7182B02F2CE8CA53001D7C33 /* XCRemoteSwiftPackageReference "iOS-Module" */;
+			productName = NotificationManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

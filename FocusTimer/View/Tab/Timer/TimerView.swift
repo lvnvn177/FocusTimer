@@ -7,7 +7,9 @@
 
 import SwiftUI
 import UIKit
-import iOS_Module
+import ADManager
+import AudioPlayerManager
+import NotificationManager
 
 struct TimerView: View {
     @ObservedObject var viewModel: TimerViewModel

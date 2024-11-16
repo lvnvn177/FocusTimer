@@ -9,9 +9,12 @@ import Foundation
 import AVFoundation
 import UserNotifications
 import UIKit
-import iOS_Module
+
 import SwiftUI
 import ActivityKit
+
+import AudioPlayerManager
+import NotificationManager
 
 class TimerViewModel: ObservableObject {
     static let shared = TimerViewModel(settingViewModel: SettingViewModel(), focusCalendarViewModel: FocusCalendarViewModel())
@@ -166,7 +169,7 @@ class TimerViewModel: ObservableObject {
                // 백그라운드/비활성화 상태일 때는 시스템 알림 소리만
                print("sound active: ", settingViewModel.set.Alarm)
                
-               iOS_Module.PushNotificationManager.shared.scheduleLocalNotification(
+               PushNotificationManager.shared.scheduleLocalNotification(
                 title: "집중 끝",
                 body: "수고하셨습니다!",
                 sound: UNNotificationSound(named: UNNotificationSoundName(rawValue: selectedSound)))
